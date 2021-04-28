@@ -1,23 +1,18 @@
-function includes(array, value) {
-  
-    // for (const element of array) {
-    //   if (element === value) {
-    //       return true;
-    //   }
-    //     }
-    //   return false;
-    for (let i = 0; i < array.length; i += 1) {
-        console.log(array[i]);
-         if (array[i] === value) {
-             return  true;
-         }
-    }
-     return false;
+// Пиши код ниже этой строки
+function addOverNum(number,...args) {
+  let total = 0;
+
+    for (const arg of args) {
+        if (arg > number) {
+            total += arg;
+        }
+  }
+
+  return total;
+  // Пиши код выше этой строки
 }
-console.log( includes([1, 2, 3, 4, 5], 3));
-console.log( includes([1, 2, 3, 4, 5], 17) );
-console.log(includes(['Земля', 'Марс', 'Венера', 'Юпитер', 'Сатурн'], 'Юпитер'));
-console.log(includes(['Земля', 'Марс', 'Венера', 'Юпитер', 'Сатурн'], 'Уран'));
-console.log(includes(['яблоко', 'слива', 'груша', 'апельсин'], 'слива'));
-console.log(includes(['яблоко', 'слива', 'груша', 'апельсин'], 'киви'));
-console.log(includes(['магия',  'манго', 'томато'], 'плюсы'));
+
+console.log(addOverNum(50, 15, 27));
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+console.log(addOverNum(15, 32, 6, 13, 19, 8));
+console.log( addOverNum(20, 74, 11, 62, 46, 12, 36));

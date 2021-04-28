@@ -1,26 +1,71 @@
-function findLongestWord(string) {
-        const massFromString = string.split(' ');
-    // console.log(massFromString);
-        let longestWord = massFromString[0];
 
-        for ( const element of massFromString) {
-            // console.log(element);
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Пиши код ниже этой строки
 
-            if (element.length > longestWord.length) {
-                longestWord = element;
-            }
-        }
+const { yesterday,today,tomorrow } = highTemperatures;
 
-       return longestWord;
+// Пиши код выше этой строки
+const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+console.log(highTemperatures.yesterday);
+console.log(highTemperatures.today);
+console.log(highTemperatures.tomorrow);
+console.log(meanTemperature);
 
 
-}
 
 
-console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
-console.log(findLongestWord('Google do a roll'));
-console.log(findLongestWord('May the force be with you'));
-console.log(findLongestWord('Find a cat'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function findLongestWord(string) {
+//         const massFromString = string.split(' ');
+//     // console.log(massFromString);
+//         let longestWord = '';
+
+//         for ( const element of massFromString) {
+//             // console.log(element);
+
+//             if (element.length > longestWord.length) {
+//                 longestWord = element;
+//             }
+//         }
+
+//        return longestWord;
+
+
+// }
+
+
+// console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
+// console.log(findLongestWord('Google do a roll'));
+// console.log(findLongestWord('May the force be with you'));
+// console.log(findLongestWord('Find a cat'));
+
 
 
 //  ******************************************

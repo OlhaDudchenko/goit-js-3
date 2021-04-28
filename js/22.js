@@ -1,15 +1,16 @@
-function createArrayOfNumbers(min, max) {
-  const numbers = [];
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Пиши код ниже этой строки
 
-for (let i = min; i <= max; i += 1) {
-  numbers.push(i);
-}
+const {yesterday, today, tomorrow, icon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',} = highTemperatures;
 
-  
-  return numbers;
-}
+// Пиши код выше этой строки
+const meanTemperature = (yesterday + today + tomorrow) / 3;
 
-console.log(createArrayOfNumbers(1, 3) );
-console.log( createArrayOfNumbers(14, 17));
-console.log( createArrayOfNumbers(29, 34));
-console.log(createArrayOfNumbers(5,15));
+console.log(yesterday);
+console.log(today);
+console.log(tomorrow);
+console.log(icon);

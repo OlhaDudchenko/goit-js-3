@@ -1,16 +1,26 @@
-function calculateTotalPrice(order) {
-let total = 0;
-    
+const products = [
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроид', price: 400, quantity: 7 },
+  { name: 'Захват', price: 1200, quantity: 9 },
+];
 
-    for (let i = 0; i < order.length; i +=1 ) { 
- 
-        total +=order[i];
-      
-       }
-  return total;
+function calculateTotalPrice(productName) {
+  // Пиши код ниже этой строки
+  let totalPrice = 0;
+  for (const product of products) {
+    // console.log(product.name);
+  if (product.name===productName) {
+    totalPrice = product.price * product.quantity;
+  }
+  
 }
+  return totalPrice;
 
-console.log(calculateTotalPrice([12, 85, 37, 4]) );
- console.log(calculateTotalPrice([164, 48, 291]));
- console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
- console.log(calculateTotalPrice([112, 71, 4, 3, 76]) );
+  // Пиши код выше этой строки
+}
+console.log(calculateTotalPrice('Бластер'));
+console.log(calculateTotalPrice('Радар'));
+console.log(calculateTotalPrice('Дроид'));
+console.log(calculateTotalPrice('Захват'));
+console.log(calculateTotalPrice('Сканер'));

@@ -1,20 +1,15 @@
-function checkFruit(fruit) {
-    const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
-    if (fruits.includes(fruit)) {
-        return true;
-    }
-    return false;
-}
-console.log(checkFruit('слива'));
-console.log(checkFruit('мандарин'));
-console.log(checkFruit('груша'));
-console.log(checkFruit('Груша'));
-console.log(checkFruit('яблоко'));
-console.log(checkFruit('kiwi'));
-// ***************************************************
+const colors = [
+  { hex: '#f44336', rgb: '244,67,54' },
+  { hex: '#2196f3', rgb: '33,150,243' },
+  { hex: '#4caf50', rgb: '76,175,80' },
+  { hex: '#ffeb3b', rgb: '255,235,59' },
+];
 
-function checkFruit(fruit) {
-  const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
+const hexColors = [];
+const rgbColors = [];
+// Пиши код ниже этой строки
 
-  return fruits.includes(fruit); // Дополни эту строку
+for (const {hex,rgb} of colors) {
+  hexColors.push(hex);
+  rgbColors.push(rgb);
 }

@@ -1,12 +1,15 @@
-const start = 6;
-const end = 27;
-let number;
-
-for (let i = start; i < end; i += 1) {
-  if (i % 5 === 0) {
-      number = i;
-      
-      break;
-  }
+function makeTask(data) {
+  const completed = false;
+  const category = 'Общее';
+  const priority = 'Обычный';
+  // Пиши код ниже этой строки
+  const task = { completed, category, priority, ...data };
+  return task;
+  // Пиши код выше этой строки
 }
-console.log(number);
+
+console.log(makeTask({}));
+console.log(makeTask({ category: 'Домашнее', priority: 'Низкий', text: 'Вынести мусор' }));
+console.log(makeTask({ category: 'Финансы', text: 'Забрать проценты' }));
+console.log( makeTask({ priority: 'Низкий', text: 'Выбрать шампунь' }));
+console.log(makeTask({ text: 'Купить хлеб' }));

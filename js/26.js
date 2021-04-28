@@ -1,16 +1,14 @@
-function calculateTotalPrice(order) {
-  let total = 0;
-  // Пиши код ниже этой строки
-
-  for (const element of order) {
-    total += element;
-  }
-
+// Пиши код ниже этой строки
+function calculateMeanTemperature(forecast) {
+  // const todayLow = forecast.today.low;
+  // const todayHigh = forecast.today.high;
+  // const tomorrowLow = forecast.tomorrow.low;
+  // const tomorrowHigh = forecast.tomorrow.high;
+  const {   today: { low:todayLow, high:todayHigh },
+  tomorrow: { low: tomorrowLow, high: tomorrowHigh }} = forecast;
   // Пиши код выше этой строки
-  return total;
+  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 }
-console.log(calculateTotalPrice([12, 85, 37, 4]));
-console.log(calculateTotalPrice([164, 48, 291]));
-console.log(calculateTotalPrice([412, 371, 94, 63, 176]) );
-console.log(calculateTotalPrice([]));
-console.log(calculateTotalPrice([12,5,76]));
+
+console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
+console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));

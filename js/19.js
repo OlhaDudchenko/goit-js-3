@@ -1,6 +1,30 @@
-const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
+const products = [
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроид', price: 400, quantity: 7 },
+  { name: 'Захват', price: 1200, quantity: 9 },
+];
 
-for (let i = 0; i < fruits.length; i+=1) { // Дополни эту строку
-  const fruit = fruits[i]; // Дополни эту строку
-  console.log(fruit);
+function getAllPropValues(propName) {
+  
+  let props = [];
+  for (const product of products) {
+    //  console.log(product);
+    const keys = Object.keys(product);
+    //  console.log(keys);
+    for (const key of keys) {
+      // console.log(product[key]);
+      if (key === propName) {
+        props.push(product[key]);
+     
+     
+      }
+    }
+    }
+  return props;
 }
+
+console.log(getAllPropValues('name'));
+   console.log(getAllPropValues('quantity'));
+   console.log(getAllPropValues('price'));
+  console.log(getAllPropValues('category'));

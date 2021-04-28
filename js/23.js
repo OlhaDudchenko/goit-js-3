@@ -1,20 +1,19 @@
-function filterArray(numbers, value) {
-    const newNumbers = [];
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Пиши код ниже этой строки
+const {yesterday:highYesterday, today:highToday, tomorrow:highTomorrow, icon:highIcon='https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg', } = highTemperatures;
+// const highYesterday = highTemperatures.yesterday;
+// const highToday = highTemperatures.today;
+// const highTomorrow = highTemperatures.tomorrow;
+// const highIcon = highTemperatures.icon;
 
-    for (const number of numbers) {
-    
-    if (number > value) {
-     newNumbers.push(number);
-       }
-    
-    }
-
-return newNumbers;
-  
-}
-console.log(filterArray([1, 2, 3, 4, 5], 3) );
-console.log(filterArray([1, 2, 3, 4, 5], 4));
-console.log(filterArray([1, 2, 3, 4, 5], 5));
-console.log(filterArray([12, 24, 8, 41, 76], 38));
-console.log(filterArray([12, 24, 8, 41, 76], 20));
-console.log(filterArray([10, 4, 8, 1, 6], 5));
+// Пиши код выше этой строки
+const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+console.log(highTemperatures);
+console.log(highYesterday);
+console.log(highToday);
+console.log(highTomorrow);
+console.log(highIcon);
