@@ -8,8 +8,9 @@ function addOverNum(number,...args) {
         }
   }
 
-  return total;
-  // Пиши код выше этой строки
+  return total; 
+
+ 
 }
 
 console.log(addOverNum(50, 15, 27));

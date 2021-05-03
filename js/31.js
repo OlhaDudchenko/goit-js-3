@@ -1,13 +1,22 @@
 // Пиши код ниже этой строки
 function add(...args) {
-  // console.log(args);
+  console.log(args);
   let total = 0;
   for (const arg of args) {
     
     total += arg;
   }
   return total;
-  // Пиши код выше этой строки
+  
+
+  // let result=0;
+  // for (let i = 0; i < args.length; i+=1){
+  //   // console.log(args[i]);
+  //   result += args[i];
+  // }
+  //  return result;
+  
+
 }
 
 console.log(add(15, 27));
