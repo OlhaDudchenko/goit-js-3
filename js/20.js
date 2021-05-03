@@ -36,6 +36,7 @@ function calculateTotalPrice(productName) {
            
 //          const total = product.price * product.quantity;
           
+//     	return total
 //     	} 
 //     } return 0
   
