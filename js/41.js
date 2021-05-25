@@ -44,6 +44,19 @@ return `Зелья ${oldName} нет в инвентаре!`;
 
 
   },
+  //  updatePotionName(oldName, newName) {
+  //   for (const potion of this.potions) {
+     
+
+  //     if (potion.name === oldName) {
+  //       return  potion.name = newName
+  //     }
+    
+
+      
+  //   }
+   
+  // },
   // Пиши код выше этой строки
 };
 // console.log(atTheOldToad);

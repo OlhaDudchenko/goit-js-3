@@ -34,9 +34,9 @@ function calculateTotalPrice(productName) {
     
 //     if(product.name === productName){
            
-//          const total = product.price * product.quantity;
+//          return  product.price * product.quantity;
           
-//     	return total
+//     
 //     	} 
 //     } return 0
   
