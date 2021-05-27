@@ -9,11 +9,13 @@ const atTheOldToad = {
     return this.potions;
   },
   addPotion(potionName) {
-    if (this.potions.includes(potionName)) {
-      return `Зелье ${potionName} уже есть в инвентаре!`;
+    for (const potion of potions) {
+      if (potion.name === potionName) {
+        return `Зелье ${potionName} уже есть в инвентаре!`;
+      }
     }
 
-    this.potions.push(potionName);
+    return this.potions.push(potionName);
   },
   removePotion(potionName) {
    for (let i = 0; i < this.potions.length; i += 1){
